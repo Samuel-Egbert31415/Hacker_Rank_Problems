@@ -16,5 +16,5 @@ JOIN Difficulty D \
 ON C.difficulty_level = D.difficulty_level\
 WHERE S.score = D.score\
 GROUP BY H.hacker_id, H.name\
-HAVING COUNT(H.hacker_id) > 1\
+HAVING COUNT(&ast;) > 1\
 ORDER BY COUNT(*) desc, H.hacker_id;
